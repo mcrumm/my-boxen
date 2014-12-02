@@ -35,16 +35,16 @@ class people::mcrumm {
     creates => "${homebrew::config::tapsdir}/homebrew-dupes",
   }
 
-  exec { "josegonzalez/homebrew-php":
-    command => "brew tap josegonzalez/homebrew-php",
-    creates => "${homebrew::config::tapsdir}/josegonzalez-php",
+  exec { "homebrew/homebrew-php":
+    command => "brew tap homebrew/homebrew-php",
+    creates => "${homebrew::config::tapsdir}/homebrew-php",
     require => Exec["tap-homebrew-dupes"],
   }
 
   package { "php55":
     ensure => present,
     require => [
-      Exec["josegonzalez/homebrew-php"],
+      Exec["homebrew/homebrew-php"],
       Package["pstree"],
       Package["watch"],
     ],
