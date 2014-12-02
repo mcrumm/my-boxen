@@ -23,11 +23,15 @@ class people::mcrumm {
   }
 
   package { "pstree":
-    ensure => present,
+    ensure => present
   }
 
   package { "watch":
-    ensure => present,
+    ensure => present
+  }
+
+  package { "zlib":
+    ensure => present
   }
 
   exec { "tap-homebrew-dupes":
@@ -43,13 +47,17 @@ class people::mcrumm {
   exec { "homebrew/homebrew-php":
     command => "brew tap homebrew/homebrew-php",
     creates => "${homebrew::config::tapsdir}/homebrew-php",
-    require => [ Exec["tap-homebrew-dupes"], Exec["tap-homebrew-versions"] ],
+    require => [
+      Exec["tap-homebrew-dupes"],
+      Exec["tap-homebrew-versions"]
+    ],
   }
 
   package { "php55":
     ensure => present,
     require => [
       Exec["homebrew/homebrew-php"],
+      Package["zlib"],
       Package["pstree"],
       Package["watch"],
     ],
