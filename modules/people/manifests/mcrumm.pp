@@ -1,4 +1,6 @@
 class people::mcrumm {
+  include bash
+  include bash::completion
   include chrome
   include iterm2::stable
   include mou
