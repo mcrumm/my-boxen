@@ -11,6 +11,7 @@ class people::mcrumm {
   include skype
   include spotify
   include sublime_text
+  include transmit
   include vlc
 
   mou::preferences { 'Mou':
