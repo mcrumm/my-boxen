@@ -7,6 +7,7 @@ class people::mcrumm {
   include php::5_5
   include php::composer
   include phpstorm
+  include screen
   include sequel_pro
   include skype
   include spotify
