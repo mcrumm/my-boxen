@@ -1,5 +1,4 @@
 class people::mcrumm {
-  include vim
   include chrome
 
   $home     = "/Users/${::boxen_user}"
