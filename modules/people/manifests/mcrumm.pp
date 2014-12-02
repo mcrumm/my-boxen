@@ -31,7 +31,8 @@ class people::mcrumm {
   }
 
   package { "zlib":
-    ensure => present
+    ensure => present,
+    require => Exec["tap-homebrew-dupes"]
   }
 
   exec { "tap-homebrew-dupes":
