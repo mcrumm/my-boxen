@@ -58,7 +58,6 @@ class people::mcrumm {
     ensure => present,
     require => [
       Exec["homebrew/homebrew-php"],
-      Package["zlib"],
       Package["pstree"],
       Package["watch"],
     ],
