@@ -1,5 +1,7 @@
 class people::mcrumm {
   include chrome
+  include php::5_5
+  include php::composer
 
   $home     = "/Users/${::boxen_user}"
   $my       = "${home}/my"
@@ -28,38 +30,5 @@ class people::mcrumm {
 
   package { "watch":
     ensure => present
-  }
-
-  package { "zlib":
-    ensure => present,
-    require => Exec["tap-homebrew-dupes"]
-  }
-
-  exec { "tap-homebrew-dupes":
-    command => "brew tap homebrew/dupes",
-    creates => "${homebrew::config::tapsdir}/homebrew-dupes",
-  }
-  
-  exec { "tap-homebrew-versions":
-    command => "brew tap homebrew/versions",
-    creates => "${homebrew::config::tapsdir}/homebrew-versions",
-  }
-
-  exec { "homebrew/homebrew-php":
-    command => "brew tap homebrew/homebrew-php",
-    creates => "${homebrew::config::tapsdir}/homebrew-php",
-    require => [
-      Exec["tap-homebrew-dupes"],
-      Exec["tap-homebrew-versions"]
-    ],
-  }
-
-  package { "php55":
-    ensure => present,
-    require => [
-      Exec["homebrew/homebrew-php"],
-      Package["pstree"],
-      Package["watch"],
-    ],
   }
 }
