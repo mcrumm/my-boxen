@@ -1,8 +1,19 @@
 class people::mcrumm {
   include chrome
+  include iterm2::stable
   include mysql
   include php::5_5
   include php::composer
+  include phpstorm
+  include pow
+  include skype
+  include sublime_text
+
+  class { 'pow':
+    domains => 'pow, xip.io',
+  }
+
+  class { 'vagrant': }
 
   $home     = "/Users/${::boxen_user}"
   $my       = "${home}/my"
