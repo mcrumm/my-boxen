@@ -1,5 +1,6 @@
 class people::mcrumm {
   include chrome
+  include mysql
   include php::5_5
   include php::composer
 
