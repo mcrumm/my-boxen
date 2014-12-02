@@ -8,6 +8,7 @@ class people::mcrumm {
   include php::composer
   include phpstorm
   include pow
+  include sequel_pro
   include skype
   include spotify
   include sublime_text
