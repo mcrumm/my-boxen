@@ -2,6 +2,7 @@ class people::mcrumm {
   include bash
   include bash::completion
   include chrome
+  include dropbox
   include iterm2::stable
   include mou
   include mou::themes
