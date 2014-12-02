@@ -12,6 +12,7 @@ class people::mcrumm {
   include spotify
   include sublime_text
   include transmit
+  include vim
   include vlc
 
   class { 'pow':
@@ -40,6 +41,11 @@ class people::mcrumm {
   package { "watch":
     ensure => present
   }
+
+  # Vim Plugins
+  vim::bundle { [
+    'chriskempson/base16-vim'
+  ]: }
 
   # OSX configuations
   include osx::global::disable_key_press_and_hold
