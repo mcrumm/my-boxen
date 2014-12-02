@@ -34,11 +34,17 @@ class people::mcrumm {
     command => "brew tap homebrew/dupes",
     creates => "${homebrew::config::tapsdir}/homebrew-dupes",
   }
+  
+  exec { "tap-homebrew-versions":
+    command => "brew tap homebrew/versions",
+    creates => "${homebrew::config::tapsdir}/homebrew-versions",
+  }
 
   exec { "homebrew/homebrew-php":
     command => "brew tap homebrew/homebrew-php",
     creates => "${homebrew::config::tapsdir}/homebrew-php",
     require => Exec["tap-homebrew-dupes"],
+    require => Exec["tap-homebrew-versions"],
   }
 
   package { "php55":
