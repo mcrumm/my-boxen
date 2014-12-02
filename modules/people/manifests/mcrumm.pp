@@ -17,6 +17,7 @@ class people::mcrumm {
   include transmit
   include vagrant_manager
   include vim
+  include virtualbox
   include vlc
 
   class { 'pow':
