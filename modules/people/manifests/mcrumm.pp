@@ -1,6 +1,5 @@
 class people::mcrumm {
   include chrome
-  include icu4c
   include iterm2::stable
   include mou
   include mou::themes
