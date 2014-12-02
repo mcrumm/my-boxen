@@ -70,6 +70,7 @@ github "stdlib",      	"4.2.1", :repo => "puppetlabs/puppetlabs-stdlib"
 github "sublime_text",	"1.1.0"
 github "sudo",        	"1.0.0"
 github "vagrant",     	"3.2.0"
+github "vlc",           "1.1.0"
 github "wget",        	"1.0.1"
 github "xquartz",     	"1.2.1"
 

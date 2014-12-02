@@ -9,6 +9,7 @@ class people::mcrumm {
   include skype
   include spotify
   include sublime_text
+  include vlc
 
   class { 'pow':
     domains => 'pow, xip.io',
