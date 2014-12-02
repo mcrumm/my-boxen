@@ -43,8 +43,7 @@ class people::mcrumm {
   exec { "homebrew/homebrew-php":
     command => "brew tap homebrew/homebrew-php",
     creates => "${homebrew::config::tapsdir}/homebrew-php",
-    require => Exec["tap-homebrew-dupes"],
-    require => Exec["tap-homebrew-versions"],
+    require => [ Exec["tap-homebrew-dupes"], Exec["tap-homebrew-versions"] ],
   }
 
   package { "php55":
