@@ -139,6 +139,11 @@ GITHUBTARBALL
     ruby (8.1.7)
 
 GITHUBTARBALL
+  remote: boxen/puppet-screen
+  specs:
+    screen (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-sequel_pro
   specs:
     sequel_pro (1.0.1)
@@ -239,6 +244,7 @@ DEPENDENCIES
   property_list_key (= 0.1.0)
   repository (= 2.3.0)
   ruby (= 8.1.7)
+  screen (= 1.0.0)
   sequel_pro (= 1.0.1)
   skype (= 1.0.9)
   spotify (= 1.0.2)
