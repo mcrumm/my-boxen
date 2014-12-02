@@ -1,6 +1,8 @@
 class people::mcrumm {
   include chrome
   include iterm2::stable
+  include mou
+  include mou::themes
   include mysql
   include php::5_5
   include php::composer
@@ -10,6 +12,11 @@ class people::mcrumm {
   include spotify
   include sublime_text
   include vlc
+
+  mou::preferences { 'Mou':
+    theme => 'Solarized (Dark)+',
+    css => 'GitHub2'
+  }
 
   class { 'pow':
     domains => 'pow, xip.io',
