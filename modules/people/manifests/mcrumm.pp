@@ -7,6 +7,7 @@ class people::mcrumm {
   include phpstorm
   include pow
   include skype
+  include spotify
   include sublime_text
 
   class { 'pow':
