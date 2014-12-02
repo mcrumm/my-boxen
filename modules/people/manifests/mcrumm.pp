@@ -33,14 +33,6 @@ class people::mcrumm {
     require => File[$my]
   }
 
-  service { "dev.nginx":
-    ensure => "stopped"
-  }
-
-  service { "dev.dnsmasq":
-    ensure => "stopped"
-  }
-
   package { "pstree":
     ensure => present
   }
