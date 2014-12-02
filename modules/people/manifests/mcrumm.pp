@@ -15,11 +15,6 @@ class people::mcrumm {
   include transmit
   include vlc
 
-  mou::preferences { 'Mou':
-    theme => 'Solarized (Dark)+',
-    css => 'GitHub2'
-  }
-
   class { 'pow':
     domains => 'pow, xip.io',
   }
