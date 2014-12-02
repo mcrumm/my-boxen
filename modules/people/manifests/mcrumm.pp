@@ -1,4 +1,5 @@
 class people::mcrumm {
+  include atom
   include bash
   include bash::completion
   include chrome

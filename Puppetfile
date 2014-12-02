@@ -39,6 +39,7 @@ github "module_data", "0.0.3", :repo => "ripienaar/puppet-module-data"
 # some/most of these if you want, but it's not recommended.
 
 github "autoconf",    	"1.0.0"
+github "atom",          "1.1.0"
 github "bash"
 github "chrome",      	"1.2.0"
 github "dnsmasq",     	"2.0.1"
