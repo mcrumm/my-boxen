@@ -189,6 +189,11 @@ GITHUBTARBALL
     vagrant (3.2.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-vagrant_manager
+  specs:
+    vagrant_manager (0.0.1)
+
+GITHUBTARBALL
   remote: boxen/puppet-vim
   specs:
     vim (1.0.5)
@@ -265,6 +270,7 @@ DEPENDENCIES
   sudo (= 1.0.0)
   transmit (= 1.0.2)
   vagrant (= 3.2.0)
+  vagrant_manager (>= 0)
   vim (= 1.0.5)
   vlc (= 1.1.0)
   wget (= 1.0.1)
