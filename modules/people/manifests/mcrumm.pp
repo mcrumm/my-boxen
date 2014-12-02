@@ -15,6 +15,7 @@ class people::mcrumm {
   include spotify
   include sublime_text
   include transmit
+  include vagrant_manager
   include vim
   include vlc
 
