@@ -71,6 +71,7 @@ class people::mcrumm {
     'tpope/vim-surround',
     'ervandew/supertab',
     'shawncplus/phpcomplete.vim',
+    'joonty/vdebug',
   ]: }
 
   # OSX configuations
