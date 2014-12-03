@@ -82,7 +82,6 @@ node default {
       'tree',
       'pstree',
       'watch',
-      'coreutils',
       'findutils',
       'gnu-tar'
     ]:
