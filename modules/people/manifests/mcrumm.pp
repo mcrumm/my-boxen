@@ -35,7 +35,6 @@ class people::mcrumm {
     'coreutils',
     'findutils',
     'git-flow',
-    'ack',
     'tree',
     'pstree',
     'watch'
