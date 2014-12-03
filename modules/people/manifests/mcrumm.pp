@@ -30,9 +30,16 @@ class people::mcrumm {
 
   class { 'vagrant': }
 
-  package { 'git-flow':
-    ensure => latest
-  }
+  # Additional Packages
+  package { [
+    'coreutils',
+    'findutils',
+    'git-flow',
+    'ack',
+    'tree',
+    'pstree',
+    'watch'
+  ]: ensure => latest }
 
   # My Dotfiles
   $home     = "/Users/${::boxen_user}"
@@ -47,15 +54,6 @@ class people::mcrumm {
     source  => 'mcrumm/dotfiles',
     require => File[$my]
   }
-
-  package { "pstree":
-    ensure => present
-  }
-
-  package { "watch":
-    ensure => present
-  }
-
 
   # Vim configurations
   file { "${vim::vimrc}":
