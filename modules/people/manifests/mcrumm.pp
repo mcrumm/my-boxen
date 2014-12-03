@@ -51,6 +51,11 @@ class people::mcrumm {
     ensure => present
   }
 
+  file { "${vim::vimrc}":
+    target  => "$dotfiles/.vimrc",
+    require => Repository[$dotfiles]
+  }
+
   # Vim Plugins
   vim::bundle { [
     'tpope/vim-sensible',
