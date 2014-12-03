@@ -79,6 +79,10 @@ node default {
   package {
     [
       'ack',
+      'tree',
+      'pstree',
+      'watch',
+      'coreutils',
       'findutils',
       'gnu-tar'
     ]:

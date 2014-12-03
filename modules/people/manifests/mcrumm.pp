@@ -32,12 +32,7 @@ class people::mcrumm {
 
   # Additional Packages
   package { [
-    'coreutils',
-    'findutils',
     'git-flow',
-    'tree',
-    'pstree',
-    'watch'
   ]: ensure => latest }
 
   # My Dotfiles
