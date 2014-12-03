@@ -4,7 +4,7 @@ class people::mcrumm {
   include bash::completion
   include chrome
   include dropbox
-  include 'git-flow'
+  include gitflow
   include iterm2::stable
   include mou
   include mou::themes
