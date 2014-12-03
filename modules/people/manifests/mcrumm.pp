@@ -53,6 +53,7 @@ class people::mcrumm {
   # Vim Plugins
   vim::bundle { [
     'chriskempson/base16-vim'
+    'scrooloose/nerdtree'
   ]: }
 
   # OSX configuations
