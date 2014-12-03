@@ -4,7 +4,6 @@ class people::mcrumm {
   include bash::completion
   include chrome
   include dropbox
-  include gitflow
   include iterm2::stable
   include mou
   include mou::themes
@@ -31,6 +30,15 @@ class people::mcrumm {
 
   class { 'vagrant': }
 
+  homebrew::formula {
+    'git-flow': ;
+  }
+
+  package { 'boxen/brews/git-flow':
+    ensure => present
+  }
+
+  # My Dotfiles
   $home     = "/Users/${::boxen_user}"
   $my       = "${home}/my"
   $dotfiles = "${my}/dotfiles"
@@ -52,12 +60,14 @@ class people::mcrumm {
     ensure => present
   }
 
+
+  # Vim configurations
   file { "${vim::vimrc}":
     target  => "$dotfiles/.vimrc",
     require => Repository[$dotfiles]
   }
 
-  # Vim Plugins
+  # Vim plugins
   vim::bundle { [
     'tpope/vim-sensible',
     'chriskempson/base16-vim',
