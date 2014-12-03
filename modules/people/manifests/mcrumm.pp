@@ -17,6 +17,7 @@ class people::mcrumm {
   include skype
   include spotify
   include sublime_text
+  include tmux
   include transmit
   include vagrant_manager
   include vim
@@ -52,11 +53,19 @@ class people::mcrumm {
 
   # Vim Plugins
   vim::bundle { [
+    'tpope/vim-sensible',
     'chriskempson/base16-vim',
     'scrooloose/nerdtree',
     'scrooloose/syntastic',
+    'tpope/vim-markdown',
+    'kchmck/vim-coffee-script',
+    'vim-ruby/vim-ruby',
     'tpope/vim-rails',
     'tpope/vim-bundler',
+    'kien/ctrlp.vim',
+    'tpope/vim-surround',
+    'ervandew/supertab',
+    'shawncplus/phpcomplete.vim',
   ]: }
 
   # OSX configuations
