@@ -30,12 +30,8 @@ class people::mcrumm {
 
   class { 'vagrant': }
 
-  homebrew::formula {
-    'git-flow': ;
-  }
-
-  package { 'boxen/brews/git-flow':
-    ensure => present
+  package { 'git-flow':
+    ensure => latest
   }
 
   # My Dotfiles
