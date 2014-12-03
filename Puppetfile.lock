@@ -1,4 +1,9 @@
 GITHUBTARBALL
+  remote: boxen/puppet-atom
+  specs:
+    atom (1.1.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-autoconf
   specs:
     autoconf (1.0.0)
@@ -22,6 +27,11 @@ GITHUBTARBALL
   remote: boxen/puppet-dnsmasq
   specs:
     dnsmasq (2.0.1)
+
+GITHUBTARBALL
+  remote: boxen/puppet-dropbox
+  specs:
+    dropbox (1.4.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-foreman
@@ -139,6 +149,11 @@ GITHUBTARBALL
     property_list_key (0.1.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-redis
+  specs:
+    redis (3.1.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-repository
   specs:
     repository (2.3.0)
@@ -199,6 +214,11 @@ GITHUBTARBALL
     vim (1.0.5)
 
 GITHUBTARBALL
+  remote: boxen/puppet-virtualbox
+  specs:
+    virtualbox (1.0.13)
+
+GITHUBTARBALL
   remote: boxen/puppet-vlc
   specs:
     vlc (1.1.0)
@@ -229,11 +249,13 @@ GITHUBTARBALL
     module_data (0.0.3)
 
 DEPENDENCIES
+  atom (= 1.1.0)
   autoconf (= 1.0.0)
   bash (>= 0)
   boxen (= 3.7.0)
   chrome (= 1.2.0)
   dnsmasq (= 2.0.1)
+  dropbox (= 1.4.1)
   foreman (= 1.2.0)
   gcc (= 2.2.0)
   git (= 2.7.0)
@@ -259,6 +281,7 @@ DEPENDENCIES
   pkgconfig (= 1.0.0)
   pow (= 2.3.0)
   property_list_key (= 0.1.0)
+  redis (= 3.1.0)
   repository (= 2.3.0)
   ruby (= 8.1.7)
   screen (= 1.0.0)
@@ -272,6 +295,7 @@ DEPENDENCIES
   vagrant (= 3.2.0)
   vagrant_manager (>= 0)
   vim (= 1.0.5)
+  virtualbox (= 1.0.13)
   vlc (= 1.1.0)
   wget (= 1.0.1)
   xquartz (= 1.2.1)
