@@ -23,10 +23,10 @@ class people::mcrumm {
   include virtualbox
   include vlc
 
-  include php::5_5_19
+  include php::5_6_3
 
   class { 'php::global':
-    version => '5.6.3'
+    version => '5.5.19'
   }
 
 
