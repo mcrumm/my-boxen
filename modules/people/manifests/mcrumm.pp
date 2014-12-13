@@ -8,7 +8,6 @@ class people::mcrumm {
   include mou
   include mou::themes
   include mysql
-  include php::5_5
   include php::composer
   include phpstorm
   include redis
@@ -23,6 +22,13 @@ class people::mcrumm {
   include vim
   include virtualbox
   include vlc
+
+  include php::5_5_19
+
+  class { 'php::global':
+    version => '5.6.3'
+  }
+
 
   class { 'pow':
     domains => 'pow, xip.io',
