@@ -29,8 +29,9 @@ class people::mcrumm {
     version => '5.5.19'
   }
 
+
   class { 'pow':
-    domains => 'dev, xip.io',
+    domains => 'pow, xip.io',
   }
 
   class { 'vagrant': }
