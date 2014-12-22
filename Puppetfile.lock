@@ -273,7 +273,7 @@ DEPENDENCIES
   libpng (= 1.0.0)
   libtool (= 1.0.0)
   module_data (= 0.0.3)
-  mou (= 1.1)
+  mou (>= 0)
   mysql (= 1.99)
   nginx (= 1.4.4)
   nodejs (= 4.0.0)
