@@ -60,9 +60,9 @@ class people::mcrumm {
   }
 
   # Mou configurations
-  mou::preferences { 'Mou':
+  ::mou::preferences { 'Mou':
     theme => 'base16-tomorrow.dark+',
-    css => 'GitHub2'
+    css   => 'GitHub2',
   }
 
   # Vim configurations
