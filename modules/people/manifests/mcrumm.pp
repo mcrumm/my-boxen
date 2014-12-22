@@ -59,6 +59,12 @@ class people::mcrumm {
     require => File[$my]
   }
 
+  # Mou configurations
+  mou::preferences { 'Mou':
+    theme => 'base16-tomorrow.dark+',
+    css => 'GitHub2'
+  }
+
   # Vim configurations
   file { "${vim::vimrc}":
     target  => "$dotfiles/.vimrc",
