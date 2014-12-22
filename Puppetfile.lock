@@ -86,7 +86,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-mou
   specs:
-    mou (1.1.0)
+    mou (1.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-mysql
@@ -273,7 +273,7 @@ DEPENDENCIES
   libpng (= 1.0.0)
   libtool (= 1.0.0)
   module_data (= 0.0.3)
-  mou (>= 0)
+  mou (= 1.1)
   mysql (= 1.99)
   nginx (= 1.4.4)
   nodejs (= 4.0.0)
