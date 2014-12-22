@@ -30,11 +30,13 @@ class people::mcrumm {
   }
 
   php::extension::intl { 'php55-intl':
-    php => '5.5.19',
+    php     => '5.5.19',
+    version => '3.0.0',
   }
 
   php::extension::intl { 'php56-intl':
-    php => '5.6.3',
+    php     => '5.6.3',
+    version => '3.0.0',
   }
 
   class { 'pow':
