@@ -29,6 +29,13 @@ class people::mcrumm {
     version => '5.5.19'
   }
 
+  php::extension::intl { 'php55-intl':
+    php => '5.5.19',
+  }
+
+  php::extension::intl { 'php56-intl':
+    php => '5.6.3',
+  }
 
   class { 'pow':
     domains => 'pow, xip.io',
