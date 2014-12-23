@@ -9,7 +9,6 @@ class people::mcrumm {
   include mou::themes
   include mysql
   include php::composer
-  include phpstorm
   include redis
   include screen
   include sequel_pro
@@ -32,6 +31,10 @@ class people::mcrumm {
   php::extension::intl { 'php55-intl':
     php     => '5.5.19',
     version => '3.0.0',
+  }
+
+  class { 'phpstorm':
+    version => '8.0.2'
   }
 
   class { 'pow':
