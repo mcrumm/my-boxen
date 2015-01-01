@@ -47,6 +47,7 @@ class people::mcrumm {
   package { [
     'git-flow',
     'android-sdk',
+    'terminal-notifier',
   ]: ensure => latest }
 
   # My Dotfiles
