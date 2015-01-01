@@ -46,6 +46,7 @@ class people::mcrumm {
   # Additional Packages
   package { [
     'git-flow',
+    'android-sdk',
   ]: ensure => latest }
 
   # My Dotfiles
