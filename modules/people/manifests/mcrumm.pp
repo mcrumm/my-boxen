@@ -77,12 +77,6 @@ class people::mcrumm {
     css   => 'GitHub2',
   }
 
-  # Vim configurations
-  file { "${vim::vimrc}":
-    target  => "$dotfiles/.vimrc",
-    require => Repository[$dotfiles]
-  }
-
   # Vim plugins
   vim::bundle { [
     'tpope/vim-sensible',
