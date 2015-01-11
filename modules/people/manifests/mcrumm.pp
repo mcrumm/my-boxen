@@ -96,6 +96,7 @@ class people::mcrumm {
     'joonty/vdebug',
     'thoughtbot/vim-rspec',
     'jgdavey/tslime.vim',
+    'Herzult/phpspec-vim',
   ]: }
 
   # OSX configuations
