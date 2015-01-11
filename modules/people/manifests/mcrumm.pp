@@ -65,9 +65,9 @@ class people::mcrumm {
     require => File[$my]
   }
 
-  exec { './bootstrap.sh --force':
-    path    => ['/usr/bin', '/usr/sbin', '/usr/local/bin', '/usr/local/sbin'],
-    cwd     => "${home}/my/dotfiles",
+  exec { 'bootstrap.sh --force':
+    path    => ['/usr/bin', '/usr/sbin', '/usr/local/bin', '/usr/local/sbin', $dotfiles],
+    cwd     => $dotfiles,
     require => Repository[$dotfiles],
   }
 
