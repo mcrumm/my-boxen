@@ -48,6 +48,7 @@ class people::mcrumm {
     'git-flow',
     'android-sdk',
     'terminal-notifier',
+    'reattach-to-user-namespace',
   ]: ensure => latest }
 
   # My Dotfiles
