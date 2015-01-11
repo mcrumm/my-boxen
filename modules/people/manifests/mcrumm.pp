@@ -94,6 +94,8 @@ class people::mcrumm {
     'ervandew/supertab',
     'shawncplus/phpcomplete.vim',
     'joonty/vdebug',
+    'thoughtbot/vim-rspec',
+    'jgdavey/tslime.vim',
   ]: }
 
   # OSX configuations
