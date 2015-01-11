@@ -65,6 +65,12 @@ class people::mcrumm {
     require => File[$my]
   }
 
+  exec { './bootstrap.sh --force':
+    path    => ['/usr/bin', '/usr/sbin', '/usr/local/bin', '/usr/local/sbin'],
+    cwd     => "${home}/my/dotfiles",
+    require => Repository[$dotfiles],
+  }
+
   # Mou configurations
   mou::preferences { 'Mou':
     theme => 'base16-tomorrow.dark+',
