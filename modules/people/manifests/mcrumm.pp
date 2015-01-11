@@ -80,6 +80,7 @@ class people::mcrumm {
   vim::bundle { [
     'tpope/vim-sensible',
     'chriskempson/base16-vim',
+    'christoomey/vim-tmux-navigator',
     'scrooloose/nerdtree',
     'scrooloose/syntastic',
     'tpope/vim-markdown',
