@@ -33,8 +33,12 @@ class people::mcrumm {
     version => '3.0.0',
   }
 
+  php::extension::mcrypt { 'php55-mcrypt':
+    php => '5.5.19'
+  }
+
   class { 'phpstorm':
-    version => '8.0.2'
+    version => '8.0.3'
   }
 
   class { 'pow':
