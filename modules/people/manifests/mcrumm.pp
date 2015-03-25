@@ -14,7 +14,6 @@ class people::mcrumm {
   include sequel_pro
   include skype
   include spotify
-  include sublime_text
   include tmux
   include transmit
   include vagrant_manager
