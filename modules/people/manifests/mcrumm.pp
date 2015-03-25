@@ -21,19 +21,20 @@ class people::mcrumm {
   include virtualbox
   include vlc
 
-  include php::5_6_3
+  php::version { '5.4.39': }
+  php::version { '5.6.7': }
 
   class { 'php::global':
-    version => '5.5.19'
+    version => '5.5.23'
   }
 
   php::extension::intl { 'php55-intl':
-    php     => '5.5.19',
+    php     => '5.5.23',
     version => '3.0.0',
   }
 
   php::extension::mcrypt { 'php55-mcrypt':
-    php => '5.5.19'
+    php => '5.5.23'
   }
 
   class { 'phpstorm':
