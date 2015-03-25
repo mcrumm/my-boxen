@@ -31,10 +31,12 @@ class people::mcrumm {
   php::extension::intl { 'php55-intl':
     php     => '5.5.23',
     version => '3.0.0',
+    require => Class['php::global'],
   }
 
   php::extension::mcrypt { 'php55-mcrypt':
-    php => '5.5.23'
+    php     => '5.5.23',
+    require => Class['php::global'],
   }
 
   class { 'phpstorm':
