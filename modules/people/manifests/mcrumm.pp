@@ -51,6 +51,7 @@ class people::mcrumm {
 
   # Additional Packages
   package { [
+    'libevent',
     'git-flow',
     'android-sdk',
     'terminal-notifier',
