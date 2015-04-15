@@ -57,6 +57,12 @@ class people::mcrumm {
     'reattach-to-user-namespace',
   ]: ensure => latest }
 
+  # LastPass CLI
+  package { 'lastpass-cli':
+    ensure          => present,
+    install_options => ['--with-pinentry', '--with-doc'],
+  }
+
   # My Dotfiles
   $home     = "/Users/${::boxen_user}"
   $my       = "${home}/my"
