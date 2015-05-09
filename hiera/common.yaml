@@ -1,0 +1,4 @@
+---
+php::config::composer:
+  version:  '1.0.0-alpha10'
+  checksum: '7eb2cdba130718a1989951a075aa4fbd'
