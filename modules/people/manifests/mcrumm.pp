@@ -28,6 +28,11 @@ class people::mcrumm {
     version => '5.5.23'
   }
 
+  php::extension::xdebug { 'php55-xdebug':
+    php     => '5.5.23',
+    require => Class['php::global'],
+  }
+
   php::extension::intl { 'php55-intl':
     php     => '5.5.23',
     version => '3.0.0',
