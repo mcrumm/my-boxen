@@ -22,7 +22,7 @@ class people::mcrumm {
   include vlc
 
   php::version { '5.4.39': }
-  php::version { '5.6.7': }
+  php::version { '5.6.9': }
 
   class { 'php::global':
     version => '5.5.23'
