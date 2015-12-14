@@ -21,28 +21,14 @@ class people::mcrumm {
   include virtualbox
   include vlc
 
-  php::version { '5.4.39': }
-  php::version { '5.6.9': }
+  /*php::version { '5.4.41': }
+  php::version { '5.5.25': }
+  php::version { '5.5.30': }
+  php::version { '5.6.8': }
+  php::version { '5.6.16': }*/
 
   class { 'php::global':
-    version => '5.5.23'
-  }
-
-  php::extension::xdebug { 'php55-xdebug':
-    php     => '5.5.23',
-    version => '2.2.3',
-    require => Class['php::global'],
-  }
-
-  php::extension::intl { 'php55-intl':
-    php     => '5.5.23',
-    version => '3.0.0',
-    require => Class['php::global'],
-  }
-
-  php::extension::mcrypt { 'php55-mcrypt':
-    php     => '5.5.23',
-    require => Class['php::global'],
+    version => '5.6.16'
   }
 
   class { 'phpstorm':
