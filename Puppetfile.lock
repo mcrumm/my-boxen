@@ -129,6 +129,11 @@ GITHUBTARBALL
     phantomjs (3.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-php
+  specs:
+    php (2.0.1)
+
+GITHUBTARBALL
   remote: boxen/puppet-phpstorm
   specs:
     phpstorm (1.0.6)
@@ -248,11 +253,6 @@ GITHUBTARBALL
   specs:
     module_data (0.0.4)
 
-GITHUBTARBALL
-  remote: sambauers/puppet-php
-  specs:
-    php (1.2.14)
-
 DEPENDENCIES
   atom (= 1.1.0)
   autoconf (= 1.0.0)
@@ -282,7 +282,7 @@ DEPENDENCIES
   osx (= 2.8.0)
   pcre (= 1.0.0)
   phantomjs (= 3.0.0)
-  php (= 1.2.14)
+  php (= 2.0.1)
   phpstorm (= 1.0.6)
   pkgconfig (= 1.0.0)
   pow (= 2.3.0)
@@ -305,3 +305,4 @@ DEPENDENCIES
   vlc (= 1.1.0)
   wget (= 1.0.1)
   xquartz (= 1.2.1)
+
