@@ -28,7 +28,7 @@ class people::mcrumm {
   php::version { '5.6.16': }*/
 
   class { 'php::global':
-    version => '5.6.16'
+    version => '7.0.0'
   }
 
   class { 'phpstorm':
